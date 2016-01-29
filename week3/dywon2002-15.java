@@ -9,7 +9,7 @@ public class Test08 {
 		int day = sc.nextInt();
 		int [] arr =  {31,28,31,30,31,30,31,31,30,31,30,31};
 		for(int i=0;i<month;i++){
-			day += arr[i];
+			day += arr[i]; // 받은 달수만큼 일수를 더해준거에 day를 더해줘서 총 day수를 계산
 		}
 		day = day%7;
 		switch(day){
