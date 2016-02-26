@@ -44,7 +44,7 @@ public class ASYMTILING {
     	}else if(n==2){
     		return 0;
     	}else{
-    		BigInteger temp=(numbers[n/2-1].multiply(BigInteger.valueOf(2l)).add(numbers[n/2-2]));   		
+    	    BigInteger temp=(numbers[n/2].add(numbers[n/2-1]));
     		return (numbers[n].subtract(temp)).mod(BigInteger.valueOf(mod)).longValue();
     	}
 
